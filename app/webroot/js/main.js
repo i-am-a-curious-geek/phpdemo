@@ -274,8 +274,8 @@ $(document).ready(function() {
 	
 	
     //=======================RENDER MAP LAYER WITH MRT POINTS========================================    
-	//var MRTpointsJSON = new L.GeoJSON.AJAX("get_data.php", {
-	var MRTpointsJSON = new L.GeoJSON.AJAX("data/mrtpoints.json", {
+	var MRTpointsJSON = new L.GeoJSON.AJAX("get_data.php", {
+	//var MRTpointsJSON = new L.GeoJSON.AJAX("data/mrtpoints.json", {
 		onEachFeature: pop_MRTpoints,
         pointToLayer: function(feature, latlng) {
             return L.circleMarker(latlng, {
